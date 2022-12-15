@@ -1,0 +1,29 @@
+@charset 'utf-8';
+// =======================================================================
+//auth
+// =======================================================================
+
+
+#rules {
+    font-size: 13px;
+}
+
+
+.lg-covor {
+    overflow: hidden;
+    max-width: 100%;/* トリミングしたい枠の幅 */
+    height: 500px;/* トリミングしたい枠の高さ */
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+        max-height: 250%;
+    }
+}

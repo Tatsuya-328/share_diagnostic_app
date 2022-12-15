@@ -1,0 +1,73 @@
+@charset 'utf-8';
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+@import "./honoka/variables";
+@import "./honoka/mixins";
+
+$brand-honoka: #add8ff;
+$brand-twitter: #55acee;
+$brand-facebook: #3b5998;
+$brand-hatena: #178fde;
+
+
+
+// ===========================
+// tool
+// ===========================
+// サイト全体で使うmixinを指定する
+//@import "./tool/_mixin";
+
+
+// ===========================
+// Base
+// ===========================
+//@import "./base/_normalize";
+
+// サイトの基本となるcss
+// headerImg(postCover / topheaderImg　/ headerImg / error 404ページのheaderImg )
+// banner系 / blockquote(引用) / さまざまなページで流用されそうなスタイル
+//@import "./base/_generic";
+
+
+// ===========================
+// layout
+// ===========================
+// ヘッダー　(header__logo / header__button /　menu-trigger (ハンバーガーメニューアイコン))
+@import "./layout/_header";
+
+// フッター (footer / Page Top / copyright)
+@import "./layout/_footer";
+
+// main　(postCategory / profile__items / thumbBox__items / articlBox__items / photoPanelBox / noticeItem )
+// タイトル系　（headInfo / additionalBox__head / has-middleLine） pager系)
+@import "./layout/_main";
+
+// nav 含まれる種類　（headerNav / breadcrumbNav / categorynav / footerNav）
+//@import "./layout/_nav";
+
+
+// ===========================
+// compornents
+// ===========================
+// button
+//@import "./compornents/_button";
+
+// form (searchform / 404ページsearchform)
+//@import "./compornents/_form";
+
+// tagList
+//@import "./compornents/_list";
+
+// sns ( bannerfb / snslink__items / snsShare__items )
+//@import "./compornents/_sns";
+
+// slick スライダー
+//@import "./compornents/_slick";
+
+
+// ===========================
+// utils
+// ===========================
+// サイズ、余白などの便利class
+//@import "./utils/_utility";

@@ -1,0 +1,153 @@
+@charset 'utf-8';
+// =======================================================================
+//partner
+// =======================================================================
+
+
+// 会社詳細
+
+.companyImgListArea {
+  max-width: 3000px;
+  overflow: auto;
+  margin: 20px 0;
+  ul {
+    display: table;
+    overflow-x: scroll;
+    list-style-type: none;
+    loat: left;
+    li {
+      display: table-cell;
+      img {
+        width: 300px;
+      }
+      .imgDescription {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.google-map {
+  height: 400px;
+  iframe {
+    overlow:hidden;
+    width: 100%;    /* 必要であれば!importantを付けてください */
+    height: 100%;    /* 必要であれば!importantを付けてください */
+  }
+}
+
+// 画像並び替え
+
+.imageOption {
+  width: 100%;
+}
+
+
+// 会社登録
+[v-cloak] > * { display:none }
+[v-cloak]::before { content: "loading…" }
+
+// スタイル管理
+
+.subject-info-box-1 {
+  float: left;
+  width: 40%;
+
+  select {
+    padding: 0;
+    height: 250px;
+  }
+
+}
+
+.subject-info-box-2 {
+  float: left;
+  width: 50%;
+  select {
+      padding: 0;
+      height: 540px;
+  }
+}
+
+select > option {
+  padding: 4px 10px 4px 10px;
+}
+select > option:hover {
+  background: #EEEEEE;
+}
+
+.subject-info-arrows {
+  float: left;
+  width: 10%;
+  button {
+    padding: 12px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+.arrow-right {
+  height: 280px;
+  padding-top: 125px;
+}
+
+.selected-left {
+  float: left;
+  width: 90%;
+}
+
+.selected-right {
+  float: left;
+  width: 10%;
+}
+
+.selected-right button {
+  display: block;
+  padding: 12px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 517px) {
+  .selected-right button {
+    display: inline;
+    margin-bottom: 5px;
+  }
+}
+
+.deleted {
+  background: #ccc;
+}
+
+select option:checked {
+  background: -internal-inactive-list-box-selection;
+}
+
+//絞り込み項目
+.subject-info-box {
+  float: left;
+  width: 100%;
+  select {
+    padding: 0;
+    height: 500px;
+  }
+}
+
+// 画像並び替え
+.image-info-box {
+  float: left;
+  width: 100%;
+  select {
+    padding: 0;
+    height: 200px;
+  }
+  .selected-left {
+    float: left;
+    width: 60%;
+  }
+
+  .selected-right {
+    float: left;
+    width: 40%;
+  }
+}
